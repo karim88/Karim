@@ -14,7 +14,7 @@
     <link rel="canonical" href="{{ page.url(true, true) }}" />
 
     {% block stylesheets %}
-        {% do assets.addCss('https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css', 100) %}
+        {% do assets.addCss('https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/css/foundation.min.css', 100) %}
         {% do assets.addCss('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css', 99) %}
         {% do assets.addCss('theme://css/custom.css', 98) %}
     {% endblock %}
@@ -22,8 +22,7 @@
 
     {% block javascripts %}
         {% do assets.addJs('jquery', 100) %}
-        {% do assets.addJs('https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js', 99) %}
-        {% do assets.addJs('https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js', 98) %}
+        {% do assets.addJs('https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/js/foundation.min.js', 99) %}
     {% endblock %}
     {{ assets.js() }}
 
@@ -34,14 +33,18 @@
 {% block header %}
     <div class="header">
         <div class="wrapper padding">
-            <a class="logo left" href="{{ base_url == '' ? '/' : base_url }}">
-                <i class="fa fa-rebel"></i>
-                {{ config.site.title }}
-            </a>
             {% block header_navigation %}
-            <nav class="main-nav">
+
+                {% include 'partials/social_navigation.html.twig' %}
+
+                <div>
+                    <a class="logo left" href="{{ base_url == '' ? '/' : base_url }}">
+                        <i class="fa fa-rebel"></i>
+                        {{ config.site.title }}
+                    </a>
+                </div>
                 {% include 'partials/navigation.html.twig' %}
-            </nav>
+
             {% endblock %}
         </div>
     </div>

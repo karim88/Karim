@@ -1,7 +1,1 @@
-{
-"version": 3,
-"mappings": ";AAGA,IAAI;EACH,MAAM,EAAE,CAAC;EACT,OAAO,EAAE,CAAC",
-"sources": ["../sass/custom.sass"],
-"names": [],
-"file": "custom.css"
-}
+{"version":3,"sources":[],"names":[],"mappings":"","file":"../css/custom.css","sourceRoot":""}
