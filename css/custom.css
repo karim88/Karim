@@ -1,4 +1,10 @@
 /* RGB */
 body {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  background-color: blue; }
+
+#page {
+  background-color: red; }
+
+/*# sourceMappingURL=custom.css.map*/

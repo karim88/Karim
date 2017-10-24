@@ -1,8 +1,24 @@
-ame: Karim
-version: 0.1.0
-description: yet a other theme
+name: Karim
 type: theme
-core: 8.x
+description: 'An intentionally plain theme with no styling to demonstrate default Drupal’s HTML and CSS. Learn how to build a custom theme from Stark in the <a href="https://www.drupal.org/docs/8/theming">Theming Guide</a>.'
+package: Core
+# version: VERSION
+# core: 8.x
+base theme: false
+
+regions:
+  headline: headline
+  header: header
+  content: content
+  sidebar: sidebar
+  footer: footer
+
 libraries:
   - karim/global-styling
   - karim/global-js
+
+# Information added by Drupal.org packaging script on 2017-10-04
+version: '0.1.1'
+core: '8.x'
+project: 'drupal'
+datestamp: 1507146289
