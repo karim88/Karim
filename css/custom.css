@@ -1,0 +1,20 @@
+/* RGB */
+body {
+  margin: 0;
+  padding: 0; }
+
+.main-nav {
+  background-color: #1d1e20;
+  color: #9aa1a5; }
+  .main-nav .mbtn:hover {
+    color: #f1f4ef !important;
+    background-color: #ef3e36; }
+
+a {
+  color: #9aa1a5 !important; }
+
+.hr {
+  border: none;
+  border-left: 1px solid #9aa1a5; }
+
+/*# sourceMappingURL=custom.css.map*/
